@@ -1,0 +1,58 @@
+.same {
+  background-color: pink;
+  border-radius: 10px;
+  width: 300px;
+  height: 100px;
+}
+
+.diff1 {
+  background-color: yellow;
+  border-radius: 10px;
+  width: 300px;
+  height: 100px;
+}
+
+.diff2 {
+  background-color: orange;
+  border-radius: 10px;
+  width: 300px;
+  height: 100px;
+}
+
+.diff3 {
+  background-color: blue;
+  border-radius: 10px;
+  width: 300px;
+  height: 100px;
+}
+
+.diff4 {
+  background-color: purple;
+  border-radius: 10px;
+  width: 300px;
+  height: 100px;
+}
+
+.diff5 {
+  background-color: grey;
+  border-radius: 10px;
+  width: 300px;
+  height: 100px;
+}
+
+.notice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+.img {
+  padding-top: 20px;
+}
+
+#img {
+  height: 300px;
+  width: 400px;
+
+  padding: 50px;
+}
