@@ -46,17 +46,14 @@
 }
 
 .nav-links a:hover {
-  color: #d16ba5;
+  color: #ee77baff;
 }
 
 .scroll_img_products {
   height: 500px; /* set required height */
-  padding-right: 10px;
   display: flex;
   gap: 20px;
   overflow-x: auto; /* horizontal scroll */
-  overflow-y: hidden;
-  white-space: nowrap;
   padding: 20px;
   scroll-behavior: smooth;
   background-color: #ae9c9cff;
@@ -93,4 +90,63 @@
   align-items: center; /* vertical alignment */
   gap: 40px; /* space between image and text */
   padding: 40px;
+}
+
+.upper {
+  margin: 50px;
+  padding: 50px;
+
+  color: white;
+  border: 2px solid black;
+  height: 200px;
+  text-align: center;
+  background-color: black;
+  box-shadow: 10px 10px 10px 0px rgba(196, 200, 118, 0.5);
+}
+
+.upper button {
+  width: 100px;
+  height: 40px;
+  background-color:;
+}
+.side {
+  color: white;
+  border: 2px solid black;
+  height: 300px;
+  width: 750px;
+  margin: 10px 20px;
+  padding: 30px;
+  background-color: black;
+  box-shadow: 10px 10px 10px 0px rgba(196, 200, 118, 0.5);
+}
+
+.side button {
+  width: 100px;
+  height: 40px;
+}
+
+.big {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+/* Hide Hamburger on Desktop */
+.hamburger {
+  display: none;
+
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  /* Hide normal menu */
+  .nav-links {
+    display: none;
+    position: absolute;
+  }
+
+  /* Show hamburger */
+  .hamburger {
+    display: block;
+  }
 }
