@@ -1,60 +1,163 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Contact Us</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sajana Cosmetics - Contact Us</title>
+
+    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+      body {
+        background-color: #fff;
+      }
+
+      /* Brand Header */
+      .bg-brand {
+        background-color: #d16ba5;
+      }
+
+      header h2,
+      header p {
+        color: #fff;
+      }
+
+      h3 {
+        color: #d16ba5;
+        font-weight: 600;
+      }
+
+      /* Button Style */
+      .btn-brand {
+        background-color: #fff;
+        color: #d16ba5;
+        border-radius: 25px;
+        padding: 8px 20px;
+        border: none;
+      }
+
+      .btn-brand:hover {
+        background-color: #d1a2bd;
+        color: #fff;
+      }
+
+      /* Card Style */
+      .custom-card {
+        background-color: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      }
+
+      footer {
+        background-color: #d16ba5;
+        color: #fff;
+      }
+    </style>
   </head>
-  <body>
-    <div class="container mt-3">
-      <h2>Contact Us</h2>
-      <br />
-      <!-- Nav pills -->
-      <ul class="nav nav-pills" role="tablist">
-        <li class="nav-item">
-          <a href="index.html">Home</a>
-        </li>
 
-        <li class="nav-item">
-          <a class="nav-link" data-bs-toggle="pill" href="#menu1">Menu 1</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-bs-toggle="pill" href="#menu2">Menu 2</a>
-        </li>
-      </ul>
-
-      <!-- Tab panes -->
-      <div class="tab-content">
-        <!-- <div id="home" class="container tab-pane active">
-          <br />
-          <h3>HOME</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div> -->
-        <div id="menu1" class="container tab-pane fade">
-          <br />
-          <h3>Menu 1</h3>
-          <p>
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat.
-          </p>
-        </div>
-        <div id="menu2" class="container tab-pane fade">
-          <br />
-          <h3>Menu 2</h3>
-          <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam.
-          </p>
-        </div>
+  <body class="d-flex flex-column min-vh-100">
+    <!-- HEADER -->
+    <header class="text-center py-5 bg-brand">
+      <div class="container">
+        <h2 class="display-6">How can we help you? 💌</h2>
+        <p class="lead">
+          Have questions about our beauty products? We’re here to help you glow!
+        </p>
       </div>
-    </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-fill">
+      <section class="container my-5">
+        <div class="row g-4">
+          <!-- LEFT SIDE : REGISTRATION FORM -->
+          <div class="col-md-6">
+            <h2 class="text-center mb-4">Customer Registration</h2>
+
+            <form action="/action_page.php" class="was-validated">
+              <div class="col-12">
+                <label class="form-label">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+
+              <div class="col-12">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Enter your email"
+                  required
+                />
+                <div class="valid-feedback">Valid email.</div>
+                <div class="invalid-feedback">
+                  Please enter a valid email address.
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label class="form-label">Phone Number</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  placeholder="98XXXXXXXX"
+                  required
+                />
+              </div>
+
+              <div class="col-12">
+                <label class="form-label">Gender</label><br />
+                <input type="radio" name="gender" /> Female
+                <input type="radio" name="gender" class="ms-3" /> Male
+              </div>
+
+              <div class="col-12">
+                <label class="form-label">Interested Products</label><br />
+                <input type="checkbox" /> Skincare
+                <input type="checkbox" class="ms-3" /> Makeup
+                <input type="checkbox" class="ms-3" /> Hair Care
+              </div>
+
+              <div class="col-12">
+                <label class="form-label">Address</label>
+                <textarea class="form-control" rows="3"></textarea>
+              </div>
+
+              <div class="col-12 text-center">
+                <button type="submit" class="btn btn-brand px-5">
+                  Register Now
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- RIGHT SIDE : LIVE CHAT -->
+          <div class="col-md-6">
+            <div
+              class="custom-card p-4 h-100 d-flex flex-column justify-content-center text-center"
+            >
+              <h3>Live Chat Support 💬</h3>
+              <p>Need instant help? Chat with our beauty experts now!</p>
+              <button class="btn btn-brand">Start Chat</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="text-center py-3 mt-auto">
+      <p class="mb-0">© 2026 Sajana Cosmetics | All Rights Reserved</p>
+    </footer>
   </body>
 </html>
